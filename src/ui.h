@@ -74,7 +74,7 @@ void ui_formula_entry_activate ();
 void ui_formula_entry_set (G_CONST_RETURN gchar *text);
 void ui_formula_entry_insert (G_CONST_RETURN gchar *text);
 void ui_formula_entry_backspace ();
-void ui_formula_entry_state ();
+void ui_formula_entry_state (gboolean state);
 void ui_button_set_pan ();
 void ui_button_set_rpn ();
 void ui_relax_fmod_buttons ();

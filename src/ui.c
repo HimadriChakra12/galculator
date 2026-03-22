@@ -149,7 +149,7 @@ static void apply_object_data (s_operation_map operation_map[],
  * apply_object_data. For scientific mode.
  */
 
-static void set_scientific_object_data ()
+static void set_scientific_object_data (GtkBuilder *xml)
 {
 	/* 20140316, simon: all these structs shall be static to have global scope.
 	 * fixes sf.net #104.
@@ -203,7 +203,7 @@ static void set_scientific_object_data ()
  * apply_object_data. For basic mode.
  */
 
-static void set_basic_object_data ()
+static void set_basic_object_data (GtkBuilder *xml)
 {
 	/* 20140316, simon: all these structs shall be static to have global scope.
 	 * fixes sf.net #104.

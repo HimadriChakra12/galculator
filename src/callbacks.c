@@ -277,7 +277,7 @@ on_gfunc_button_clicked                (GtkToggleButton       *button,
     if (strcmp(gtk_buildable_get_name(GTK_BUILDABLE(button)), "button_ee") == 0) 
         rpn_stack_lift();
     func = g_object_get_data (G_OBJECT (button), "func");
-    if (func != NULL) func(button);
+    if (func != NULL) ((void (*)(GtkWidget *))func)(button);
     else error_message ("This button has no general function associated with");
 }
 
